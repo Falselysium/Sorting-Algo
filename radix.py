@@ -16,7 +16,6 @@ def counting(A,n):
 
     #Counting the number of times each number appears in the list
     for x in A:
-        
         count[(x//n)%10]+=1
 
     #Adding the previous count to the next number

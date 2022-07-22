@@ -1,8 +1,6 @@
 import random
 import time
 
-
-
 def insertion_sort(A):
     for j in range(1,len(A)):
         key = A[j]
@@ -12,7 +10,6 @@ def insertion_sort(A):
             i = i-1
         A[i+1] = key
     return A
-
 
 #Setting the N by changing the exponent for 10**
 for i in range(1,7):

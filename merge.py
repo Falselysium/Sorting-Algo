@@ -3,7 +3,6 @@ from math import floor, ceil
 import random
 import time
 
-
 def MergeSort(array, left, right):
     if len(array) > 1:
         mid = floor(len(array)//2)
@@ -22,7 +21,6 @@ def MergeSort(array, left, right):
                 array[_] = L2[i2]
                 i2 += 1
     return array
-
 
 #Setting the N by changing the exponent for 10**
 for i in range(1,7):

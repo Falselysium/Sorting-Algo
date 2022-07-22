@@ -2,12 +2,6 @@ from heapq import heapify
 import random
 import time
 
-
-maxvalue = 10
-
-list = [random.randint(1, maxvalue) for x in range(0, maxvalue)]
-# print(list)
-
 def heap_sort(A):
     size = len(A)
     max_heap(A,size)
@@ -42,7 +36,6 @@ def swap(A, r, largest):
     A[r] = A[largest]
     A[largest] = temp
 
-
 #Setting the N by changing the exponent for 10**
 for i in range(1,7):
     maxvalue = 10**i
@@ -51,6 +44,3 @@ for i in range(1,7):
     start_time = time.time_ns()
     heap_sort(list)
     print(time.time_ns()-start_time, "nanoseconds")
-
-
-

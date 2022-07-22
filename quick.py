@@ -20,7 +20,6 @@ def partition(A,p,r):
     A[i+1],A[r] = A[r],A[i+1]
     return i+1
 
-
 #Setting the N by changing the exponent for 10**
 for i in range(1,7):
     maxvalue = 10**i
